@@ -29,13 +29,13 @@ for i in range(0, cantidadDeDatos):
 x = np.array(x)
 
 
-clf = KNeighborsClassifier()
 
+kf = KFold(n_splits = 5, shuffle=True)
 
-for i in range(2,11):
+for i in range(1,11):
   print("=================== Medición con K = ",i)
-  kf = KFold(n_splits = i, shuffle=True)
 
+  clf = KNeighborsClassifier(n_neighbors=i)
 
   accp = 0
 
@@ -54,4 +54,4 @@ for i in range(2,11):
     print("acc = ", (cm[0,0]+cm[1,1])/len(y_test))
     accp += (cm[0,0]+cm[1,1])/len(y_test)
 
-  print("Average acurracy is ", accp/i)
+  print("Average accuracy is ", accp/5)

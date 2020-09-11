@@ -85,7 +85,7 @@ for train_index, test_index in kf.split(x):
 
 
 
-print("Average acurracy is ", accp/5)
+print("Average accuracy is ", accp/10)
 print("Average recall class 1", recallAverage1/10)
 print("Average recall class 2", recallAverage2/10)
 print("Average recall class 3", recallAverage3/10)

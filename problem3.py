@@ -72,7 +72,7 @@ for train_index, test_index in kf.split(x):
 
 
 
-print("Average acurracy is ", accp/5)
+print("Average accuracy is ", accp/5)
 
 for i in range (10, 100, 10):
   porcentaje = i/100
@@ -101,5 +101,5 @@ for i in range (10, 100, 10):
 
 
 
-  print("Average acurracy is ", accp/5)
+  print("Average accuracy is ", accp/5)
 

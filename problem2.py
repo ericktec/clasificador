@@ -53,7 +53,7 @@ for train_index, test_index in kf.split(x):
 
 bestAverage = accp/5
 bestPrediction = "Linear"
-print("Average acurracy is ", accp/5)
+print("Average accuracy is ", accp/5)
 
 
 print("==============================RBF")
@@ -86,7 +86,7 @@ if(accp/5 > bestAverage):
   bestPrediction = "RBF"
 
 
-print("Average acurracy is ", accp/5)
+print("Average accuracy is ", accp/5)
 
 
 print("==============================NEIGH")
@@ -115,7 +115,7 @@ if(accp/5 > bestAverage):
   bestAverage = accp/5
   bestPrediction = "NEIGH"
 
-print("Average acurracy is ", accp/5)
+print("Average accuracy is ", accp/5)
 
 
 
@@ -144,12 +144,12 @@ if(accp/5 > bestAverage):
   bestPrediction = "DTC"
 
 
-print("Average acurracy is ", accp/5)
+print("Average accuracy is ", accp/5)
 
 
 
 
-print("The best clasifier was ", bestPrediction)
+print("The best classifier was ", bestPrediction)
 
 
 
