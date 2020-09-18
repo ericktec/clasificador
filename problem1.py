@@ -94,9 +94,3 @@ print("Average precision class 2", precisionAverage2/10)
 print("Average precision class 3", precisionAverage3/10)
 
 
-
-
-
-
-
-
